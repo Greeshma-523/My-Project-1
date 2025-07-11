@@ -2,22 +2,83 @@
 <html lang="en">
 <head>
     <style>
-        img{
-            width: 50%;
-            float: left;
+        .container {
+            display: flex;
+            width: 100%;
         }
-        form{
+
+        img {
             width: 50%;
-            float: right;
-            text-align: center;
-            font: bold;
-            font-size: large;
+            height: auto;
+        }
+
+        .form-section {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             background-color: plum;
-        }
-        footer{
-            display: inline;
+            font-size: 20px;
             padding: 20px;
+            box-sizing: border-box;
+        }
+
+        form {
+            width: 80%;
+        }
+
+        form label {
+            font-size: 22px;
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+        }
+
+        form input {
+            font-size: 20px;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        .register-button-container {
             text-align: center;
+            margin-top: 10px;
+        }
+
+        form button {
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+
+        .login-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .login-section p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .login-section button {
+            font-size: 18px;
+            padding: 8px 16px;
+        }
+        h1 {
+            background-color: purple;
+            color: white;
+            padding: 10px 0;
+            margin: 0;
+        }
+        footer {
+            text-align: center;
+            background-color: purple;
+            color: white;
+            padding: 10px 0;
+            margin: 0;
         }
     </style>
     <meta charset="UTF-8">
@@ -27,22 +88,36 @@
 <body>
     <main>
         <center><h1>Welcome to G-Mart!</h1></center>
-        <img src="cart.jpg" alt="" width="500" height="500">
-        <form action="">
-            <label for="name">Name</label><br>
-            <input placeholder="enter your name" type="text"><br>
-            <label for="email">Email</label><br>
-            <input placeholder="enter your email" type="email"><br>
-            <label for="phone">Mobile Number</label><br>
-            <input placeholder="enter your mobile number" type="tel"><br>
-            <label for="password">Password</label><br>
-            <input placeholder="enter password" type="password"><br>
-            <button type="submit">Register</button><br>
-        </form>
+        <div class="container">
+            <img src="cart.jpg" alt="Cart Image">
+            <div class="form-section">
+                <form action="">
+                    <label for="name">Name</label>
+                    <input id="name" placeholder="enter your name" type="text">
+
+                    <label for="email">Email</label>
+                    <input id="email" placeholder="enter your email" type="email">
+
+                    <label for="phone">Mobile Number</label>
+                    <input id="phone" placeholder="enter your mobile number" type="tel">
+
+                    <label for="password">Password</label>
+                    <input id="password" placeholder="enter password" type="password">
+
+                    <div class="register-button-container">
+                        <a href="login.html"><button type="submit">Register</button></a>
+                    </div>
+                </form>
+
+                <div class="login-section">
+                    <p>Already have an account? Login here</p>
+                    <button type="submit">Login</button>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        <p>Already have an acount? Login here</p>
-        <center><button type="submit">Login</button></center>
+        <p>&copy; 2025 www.gmart.com</p>
     </footer>
 </body>
 </html>
