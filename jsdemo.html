@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form onsubmit="return validate(event)">
+    <label for="fname">Enter Name</label><br>
+    <input type="text" id="fname"><br>
+    <span id="err" style="color: red;"></span>
+    <span id="fnamesucc" style="color: green"></span><br>
+    <label for="lname">Enter LastName</label><br>
+    <input type="text" id="lname"><br>
+    <span id="err" style="color: red;"></span>
+    <span id="lnamesucc" style="color: green"></span><br>
+    <label for="email">email</label><br>
+    <input type="email" id="email"><br>
+    <span id="err" style="color: red;"></span>
+    <span id="emailsucc" style="color: green"></span><br>
+    <label for="password">Password</label><br>
+    <input type="password" id="password"><br>
+    <span id="err" style="color: red;"></span>
+    <span id="passwordsucc" style="color: green"></span><br>
+    <button type="submit">Login</button>
+  </form>
+  <script>
+    function validate(event){
+      event.preventDefault();
+      let name = document.getElementById("fname").value;
+      if(name == ""){
+        document.getElementById("err").innerHTML = "Enter a name";
+        return false;
+      } else{
+        document.getElementById("fnamesucc").innerHTML = "name entered";
+      }
+      let lname = document.getElementById("lname").value;
+      if(lname == ""){
+        document.getElementById("err").innerHTML = "Enter a lname";
+        return false;
+      } else{
+        document.getElementById("lnamesucc").innerHTML = "name entered";
+      }
+      let email = document.getElementById("email").value;
+      if(email == ""){
+        document.getElementById("err").innerHTML = "Enter email";
+        return false;
+      } else{
+        document.getElementById("emailsucc").innerHTML = "email entered";
+      }
+      let password = document.getElementById("password").value;
+      if(password == ""){
+        document.getElementById("err").innerHTML = "Enter a password";
+        return false;
+      } else{
+        document.getElementById("passwordsucc").innerHTML = "password entered";
+      }
+      alert("Form Submitted Successfully");
+        return true;
+    }
+  </script>
+</body>
+</html>
