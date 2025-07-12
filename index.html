@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+           font-family: 'Times New Roman', Times, serif;
+           background-color: plum;
+           color: white; 
+        }
+        #bgvideo{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100vw;
+            min-height: 100vh;
+            object-fit: cover;
+            z-index: -2;
+            opacity: 2.0;
+        }
+        header{
+            background-color: purple;
+            color: white;
+            padding: 20px;
+            text-align:center;
+        }
+        header a{
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .menu-section{
+            padding: 40px 20px;
+        }
+        .menu-section h2{
+            font-size: 30px;
+            margin: 20px 0;
+            display: inline-block;
+        }
+        .menu-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .menu-item{
+            background: purple;
+            border: 2px solid black;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,1);
+            transition: transform 0.2 ease;
+        }
+        .menu-item:hover{
+            transform: scale(1.05)
+        }
+        .menu-item{
+            font-size: large;
+        }
+        footer{
+            background-color: burlywood;
+            color: black;
+            text-align: center;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+</head>
+    <video autoplay muted loop id="bgvideo">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <header>
+        <h1>Welcome to G-Mart</h1>
+        <p>Everything you need at one stop!</p>
+        <nav>
+            <a href="">Items</a>
+            <a href="">Contact</a>
+            <a href="">Services</a>
+        </nav>
+    </header>
+    <div class="menu-section">
+        <h2 style="color: black;">Grocery</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <a href="chocos.html"><img src="https://m.media-amazon.com/images/I/61EMxjo+mqL._UF1000,1000_QL80_.jpg" alt="" width="450" height="300"></a>
+                <h3>Chocos</h3>
+                <p>Very sweet chocos</p>
+                <span>$5.6</span>
+            </div>
+            <div class="menu-item">
+                <a href="oil.html"><img src="https://images.pexels.com/photos/12284682/pexels-photo-12284682.jpeg" alt="" width="450" height="300"></a>
+                <h3>Cooking Oil</h3>
+                <p>Very healthy</p>
+                <span>$2.8</span>
+            </div>
+            <div class="menu-item">
+                <a href="pulses.html"><img src="https://images.pexels.com/photos/7421297/pexels-photo-7421297.jpeg" alt="" width="450" height="300"></a>
+                <h3>Pulses</h3>
+                <p>Very fresh</p>
+                <span>$3.4</span>
+            </div>
+        </div>
+        <h2 style="color: black;">Sports</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <a href="shoes.html"><img src="https://images.pexels.com/photos/1599005/pexels-photo-1599005.jpeg" alt="" width="450" height="300"></a>
+                <h3>Running Shoes</h3>
+                <p>Very comfortable</p>
+                <span>$4.2</span>
+            </div>
+            <div class="menu-item">
+                <a href="racket.html"><img src="https://images.pexels.com/photos/4966364/pexels-photo-4966364.jpeg" alt="" width="450" height="300"></a>
+                <h3>Badminton</h3>
+                <p>Racket</p>
+                <span>$4.4</span>
+            </div>
+            <div class="menu-item">
+                <a href="ball.html"><img src="https://images.pexels.com/photos/7702229/pexels-photo-7702229.jpeg" alt="" width="450" height="300"></a>
+                <h3>Cricket</h3>
+                <p> Ball</p>
+                <span>$4.4</span>
+            </div>
+        </div>
+        <h2 style="color: black;">Icecreams</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <a href="blackcurrant.html"><img src="https://www.shutterstock.com/image-photo/ice-cream-ball-isolated-on-600nw-1205564737.jpg" alt="" width="450" height="300"></a>
+                <h3>Black Currant</h3>
+                <p>Very tasty</p>
+                <span>$2.6</span>
+            </div>
+            <div class="menu-item">
+                <a href="strawberry.html"><img src="https://thumbs.dreamstime.com/b/one-single-pink-strawberry-ice-cream-ball-scoop-isolated-white-background-top-view-single-strawberry-ice-cream-ball-scoop-154615569.jpg" alt="" width="450" height="300"></a>
+                <h3>Strawberry</h3>
+                <p>Very tasty</p>
+                <span>$2.6</span>
+            </div>
+            <div class="menu-item">
+                <a href="redvelvet.html"><img src="https://png.pngtree.com/png-clipart/20190903/ourmid/pngtree-strawberry-ice-cream-scoop-png-image_1721568.jpg" alt="" width="450" height="300"></a>
+                <h3>Red Velvet</h3>
+                <p>Very tasty</p>
+                <span>$2.6</span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 G-Mart Shopping | More</p>
+        <p>follow us on <a href="www.gmart.com">www.gmart.com</a></p>
+    </footer> 
+</body>
+</html>
